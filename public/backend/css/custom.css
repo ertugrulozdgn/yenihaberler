@@ -1,0 +1,15 @@
+.table > tbody > tr > td {
+    vertical-align: middle;
+}
+
+.fa-trash-o {
+    color: tomato;
+}
+
+.fa-pencil-square {
+    color: steelblue;
+}
+
+.alert-light {
+    background-color: #ffcccc !important;
+}
