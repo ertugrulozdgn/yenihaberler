@@ -24,7 +24,7 @@
                     <div class="form-group">
                         <div class="row">
                             <div class="col-xs-6">
-                                <label>Resim Seç <small class="text-muted">(Lüten tekrar dosya seçmeyi unutmayınız!!!)</small></label>
+                                <label>Resim Seç</label>
                                 <input class="form-control"  type="file" name="image">
                             </div>
 

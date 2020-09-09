@@ -11,7 +11,7 @@ class Post extends Model
 {
     protected $fillable = ['title','slug','content','category_id','user_id','summary','status','location','published_at'];
 
-    protected function serializeDate(DateTimeInterface $date) : string  // Api created_at istemediğim tarzda veriyordu iso801 formatında
+    protected function serializeDate(DateTimeInterface $date) : string  // Api created_at istemediğim formatta veriyordu iso801 formatında
     {
         return $date->format('Y-m-d H:i');
     }

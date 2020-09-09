@@ -30,19 +30,6 @@
     {{--Adsense--}}
     <script data-ad-client="ca-pub-8534781179674476" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 
-    <style type="text/css">
-
-
-
-        .content {
-            box-shadow: 1px -121px 29px 1px rgba(0,0,0,0.44) inset;
-            -webkit-box-shadow: 1px -121px 29px 1px rgba(0,0,0,0.44) inset;
-            -moz-box-shadow: 1px -121px 29px 1px rgba(0,0,0,0.44) inset;
-        }
-
-
-    </style>
-
 </head>
 <body>
 

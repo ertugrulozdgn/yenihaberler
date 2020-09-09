@@ -6,6 +6,7 @@ use App\Http\Controllers\Controller;
 use App\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Hash;
+use tests\Mockery\Adapter\Phpunit\EmptyTestCase;
 
 class UsersController extends Controller
 {
@@ -84,7 +85,9 @@ class UsersController extends Controller
             'name' => 'required',
             'email' => 'required|email',
             'image' => $request->hasFile('image') ? 'required|image|mimes:jpg,jpeg,png|max:2048' : '',
+//            'image' => !empty($request->image) ? 'required|image|mimes:jpg,jpeg,png|max:2048' : '',
             'password' => !empty($request->password) ? 'required|min:8|max:20|confirmed' : ''
+//            'password' => $request->has('password') ? '' : 'required|min:8|max:20|confirmed'
         ]);
 
         if ($request->hasFile('image')) {

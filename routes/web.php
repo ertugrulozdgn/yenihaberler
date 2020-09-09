@@ -11,8 +11,7 @@ Route::namespace('Backend')->group(function (){
 
         Route::get('/','DefaultController@login')->name('admin.login');
         Route::post('/','DefaultController@authenticate')->name('admin.authenticate');  //login.blade form action
-        Route::get('/auth/profile','DefaultController@edit')->name('admin.profile');
-        Route::post('/auth/profile','DefaultController@update')->name('admin.profile.edit');
+
     });
 
     Route::middleware(['user'])->group(function () {
@@ -22,6 +21,8 @@ Route::namespace('Backend')->group(function (){
             Route::get('/logout','DefaultController@logout')->name('admin.logout');
             Route::get('auth/posts','AuthPostsController@index');
             Route::resource('posts','PostsController');
+            Route::get('/auth/profile','DefaultController@edit')->name('admin.profile');
+            Route::post('/auth/profile','DefaultController@update')->name('admin.profile.edit');
 
 
             Route::middleware(['admin'])->group(function () {
